@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculator</title>
+<style>
+	body{
+border: 3px solid black; 
+outline: 5px solid orange;
+margin :40px 400px;
+
+}
+h1{
+text-align: center; 
+font-size: 80px;
+margin-top: 10px;
+color: #F0FFFF;
+}
+form{
+margin-top: 15px;
+text-align: center;
+}
+input[type=text]{
+width: 570px;
+height: 80px; 
+margin-top: 15px; 
+background-color: black;
+border: 3px solid black;
+}
+input{
+width: 130px; 
+height: 75px; 
+font-size: 45px;
+border-radius: 7px;
+margin: 8px;
+}
+input.num{
+color:cornsilk;
+background-color: navy;
+}
+input.operator{
+color: mediumturquoise;
+background-color: #E0FBFC;
+border:2px solid black;
+}
+input.operator:hover{
+box-shadow: 5px 5px;
+background-color: lightgrey;
+}
+.num:focus{
+background-color: rgb(255, 165, 0);
+} 
+div {
+	background-color: gainsboro;
+}  
+</style>
+<link rel="stylesheet" href="calculatorstyle.css">
+</head>
+<body>
+<div>
+<h1>Calculator</h1>
+<form name="calc">
+<input type="text" name="display"><br>
+<input type="button" value="1" onclick="calc.display.value
++='1'" class="num">
+<input type="button" value="2" onclick="calc.display.value
++='2'" class="num">
+<input type="button" value="3" onclick="calc.display.value
++='3'" class="num">
+<input type="button" value="+" onclick="calc.display.value
++='+'" class="operator"><br>
+<input type="button" value="4" onclick="calc.display.value
++='4'" class="num">
+<input type="button" value="5" onclick="calc.display.value
++='5'" class="num">
+<input type="button" value="6" onclick="calc.display.value
++='6'" class="num">
+<input type="button" value="-" onclick="calc.display.value
++='-'" class="operator"><br>
+<input type="button" value="7" onclick="calc.display.value
++='7'" class="num">
+<input type="button" value="8" onclick="calc.display.value
++='8'" class="num">
+<input type="button" value="9" onclick="calc.display.value
++='9'" class="num">
+<input type="button" value="*" onclick="calc.display.value
++='*'" class="operator"><br>
+<input type="button" value="C" onclick="calc.display.value=' '" class="opeartor">
+<input type="button" value="0" onclick="calc.display.value
++='0'" class="num">
+<input type="button" value="=" onclick="calc.display.value=eval(calc.display.value)" class="operator">
+<input type="button" value="/" onclick="calc.display.value
++='/'" class="operator">
+</form>
+</div>
+</body>
+</html>
